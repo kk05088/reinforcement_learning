@@ -51,6 +51,7 @@ def runEpisode(state):
             episode.append(next_state)
             episodeReward.append(reward)
         state = next_state
+    
     return episode, episodeReward
 
 
