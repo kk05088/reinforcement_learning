@@ -1,10 +1,10 @@
-# #######################################################################
-# # Copyright (C)                                                       #
-# # 2016-2018 Shangtong Zhang(zhangshangtong.cpp@gmail.com)             #
-# # 2016 Kenta Shimada(hyperkentakun@gmail.com)                         #
-# # Permission given to modify the code as long as you keep this        #
-# # declaration at the top                                              #
-# #######################################################################
+#######################################################################
+# Copyright (C)                                                       #
+# 2016-2018 Shangtong Zhang(zhangshangtong.cpp@gmail.com)             #
+# 2016 Kenta Shimada(hyperkentakun@gmail.com)                         #
+# Permission given to modify the code as long as you keep this        #
+# declaration at the top                                              #
+#######################################################################
 
 import numpy as np
 
@@ -54,11 +54,7 @@ def figure_3_5(value):
             break
         value = new_value
         it += 1
-        # input("Press Enter to continue...")
-        np.set_printoptions(precision=2)
-        print(value)
-        print()
-    print("Converges in {} iterations".format(it))
+
     return value
 
 
@@ -79,7 +75,7 @@ def policy_improve(value, policy):
         max_idx = max_list.index(max(max_list))
 
         policy[i] = [action_list[max_idx]]
-        print(policy[i])
+        # print(policy[i])
         # return
         if temp != policy[i]:
             change = True
@@ -112,7 +108,8 @@ print(result)
 #================================================#
 '''
 The code below was obtained through AI resources.
-It was found as the error in my code above was indentified
+It was ditched as the error in my code above was indentified and
+then corrected
 '''
 # def policy_improve(value):
 #     policy = np.zeros((WORLD_SIZE, WORLD_SIZE), dtype=int)
